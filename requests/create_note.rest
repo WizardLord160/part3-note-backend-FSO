@@ -1,8 +1,20 @@
-POST http://localhost:3001/api/notes/ HTTP/1.1
-content-type: application/json
+# POST http://localhost:3001/api/notes/ HTTP/1.1
+# content-type: application/json
+
+# {
+#     "content": "nmixx change up",
+#     "important": true,
+#     "userId": "666399aed8495c4204b50a4e"
+# }
+
+# POST http://localhost:3001/api/notes/ HTTP/1.1
+# content-type: application/json
+
+POST http://localhost:3001/api/notes 
+Content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlN1bGx5b29uIiwiaWQiOiI2NjYzOTlhZWQ4NDk1YzQyMDRiNTBhNGUiLCJpYXQiOjE3MTkxMDU4ODB9.mIaG8-su-TKllNR212sGToFw5Ds9DUB-AFNXGz02hBM
 
 {
-    "content": "user id of the note creator is at the start sent along the request",
-    "important": true,
-    "userId": "666399aed8495c4204b50a4e"
+    "content": "Token auth test!",
+    "important": false
 }
